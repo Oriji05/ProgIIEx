@@ -6,9 +6,14 @@
 //
 
 #include <iostream>
+#include <vector>
+
+#include "Angoli/Angolo.hpp"
+
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+    Angolo *angolo = new Angolo(3);
+    cout << angolo->getGradi() << " " <<angolo->getPrimi() << " " << angolo->getSecondi();
+    
 }
