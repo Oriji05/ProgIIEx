@@ -14,6 +14,6 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
     Angolo *angolo = new Angolo(3);
-    cout << angolo->getGradi() << " " <<angolo->getPrimi() << " " << angolo->getSecondi();
+    cout << angolo->getAll();
     
 }

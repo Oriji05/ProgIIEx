@@ -8,7 +8,8 @@
 #ifndef Angolo_hpp
 #define Angolo_hpp
 
-#include <stdio.h>
+#include <string>
+using namespace std;
 
 class Angolo{
 private:
@@ -20,13 +21,14 @@ public:
     Angolo();
     Angolo(int gradi, int primi, int secondi);
     Angolo(double rad);
-    void setGradi();
-    void setPrimi();
-    void setSecondi();
+    void setGradi(int gradi);
+    void setPrimi(int primi);
+    void setSecondi(int secondi);
     int getGradi();
     int getPrimi();
     int getSecondi();
-    void setAll();
+    void setAll(int gradi, int primi, int secondi);
+    string getAll();
     
 };
 

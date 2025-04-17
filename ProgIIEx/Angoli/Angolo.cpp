@@ -27,6 +27,7 @@ Angolo::Angolo(int gradi, int primi, int secondi) {
 }
 
 Angolo::Angolo(double rad){
+    
     double gradi = rad * (180/M_PI);
     this->gradi = (int)gradi;
     double primi = gradi - (int)gradi;
@@ -47,4 +48,26 @@ int Angolo::getPrimi(){
 
 int Angolo::getSecondi(){
     return this->secondi;
+}
+
+void Angolo::setGradi(int gradi) {
+    this->gradi = gradi;
+}
+
+void Angolo::setPrimi(int primi) {
+    this->gradi = primi;
+}
+
+void Angolo::setSecondi(int secondi) {
+    this->secondi = secondi;
+}
+
+void Angolo::setAll(int gradi, int primi, int secondi) {
+    this->setGradi(gradi);
+    this->setPrimi(primi);
+    this->setSecondi(secondi);
+}
+
+string Angolo::getAll(){
+    return  to_string(this->getGradi()) + " " + to_string(this->getPrimi()) + " " + to_string(this->getSecondi());
 }
