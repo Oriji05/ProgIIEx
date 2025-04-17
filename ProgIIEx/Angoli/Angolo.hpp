@@ -26,7 +26,6 @@ public:
     int getGradi();
     int getPrimi();
     int getSecondi();
-    
     void setAll();
     
 };
