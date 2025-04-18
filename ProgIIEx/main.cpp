@@ -9,11 +9,16 @@
 #include <vector>
 
 #include "Angoli/Angolo.hpp"
+#include "Contatori/IntCounter.hpp"
+#include "Contatori/StringCounter.hpp"
+#include "Templates/templateFunction.hpp"
 
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-    Angolo *angolo = new Angolo(3);
-    cout << angolo->getAll();
+    
+    IntCounter ic;
+    ic.inc();
+    printCounter<IntCounter> (ic);
     
 }
