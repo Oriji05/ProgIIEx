@@ -17,8 +17,8 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
     
-    IntCounter ic;
-    ic.inc();
-    printCounter<IntCounter> (ic);
+    vector<int> myVettore(10, 7);
+    scalXVector <int, int> (5, myVettore);
+    showVector("questo è tutto il vettore inizzializzato di default", myVettore);
     
 }
