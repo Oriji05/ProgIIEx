@@ -30,3 +30,15 @@ template <class T, class U> void scalXVector(T scalare, vector<U> &vettore){
         vettore[i] = vettore[i] * scalare;
     }
 }
+
+
+template <class T, class U> T prodScalVector(vector<T> &v1, vector<U> &v2) {
+    T ps = 0;
+    
+    for (int i = 0; i < v1.size(); ++i) {
+        ps = ps + (v1[i] * v2[i]);
+    }
+    return ps;
+}
+
+

@@ -22,9 +22,22 @@
 		2D9CA0EC2DAFFDC5004170CF /* ProgIIEx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProgIIEx; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		2D9CA11B2DB29FAC004170CF /* Exceptions for "ProgIIEx" folder in "Compile Sources" phase from "ProgIIEx" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 2D9CA0E82DAFFDC5004170CF /* Sources */;
+			membershipExceptions = (
+				Templates/templateFunction.ipp,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		2D9CA0EE2DAFFDC5004170CF /* ProgIIEx */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2D9CA11B2DB29FAC004170CF /* Exceptions for "ProgIIEx" folder in "Compile Sources" phase from "ProgIIEx" target */,
+			);
 			path = ProgIIEx;
 			sourceTree = "<group>";
 		};

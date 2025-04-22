@@ -18,7 +18,8 @@ using namespace std;
 int main(int argc, const char * argv[]) {
     
     vector<int> myVettore(10, 7);
-    scalXVector <int, int> (5, myVettore);
-    showVector("questo è tutto il vettore inizzializzato di default", myVettore);
+    vector<int> myVettore2(10, 8);
+    
+    
     
 }
