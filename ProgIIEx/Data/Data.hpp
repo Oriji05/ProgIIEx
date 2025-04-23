@@ -22,6 +22,7 @@ private:
 public:
     Data();
     Data(int year, int month, int day);
+    Data(const Data &copy);
     void mod(int year, int month = 1, int day = 1);
     void out();
 };

@@ -12,14 +12,15 @@
 #include "Contatori/IntCounter.hpp"
 #include "Contatori/StringCounter.hpp"
 #include "Templates/templateFunction.hpp"
+#include "Crittografia/Crittografia.hpp"
+#include "Studenti/Studente.hpp"
 
 using namespace std;
 
 int main(int argc, const char * argv[]) {
     
-    vector<int> myVettore(10, 7);
-    vector<int> myVettore2(10, 8);
-    
+    Studente *student = new Studente("Vincenzo", "Barbato", "000140500", new Data(2005, 5, 5));
+
     
     
 }

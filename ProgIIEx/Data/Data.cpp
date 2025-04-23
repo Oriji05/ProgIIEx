@@ -11,6 +11,8 @@ Data::Data() : year(0), month(1), day(1) {}
 
 Data::Data(int year, int month, int day) : year(year), month(month), day(day) {}
 
+Data::Data(const Data &copy) : year(copy.year), month(copy.month), day(copy.day) {}
+
 bool Data::val() {
     if (this->month > 12 || this->day > 31){
         return false;
