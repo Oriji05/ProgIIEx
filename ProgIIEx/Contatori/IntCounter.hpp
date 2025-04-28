@@ -17,6 +17,9 @@ public:
     IntCounter();
     void inc();
     int getCounter();
+    IntCounter& operator= (const IntCounter &c);
+    bool operator!=(const IntCounter &c) const;
+    bool operator==(const IntCounter &c) const;
 };
 
 

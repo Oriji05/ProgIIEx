@@ -26,10 +26,12 @@ public:
     void setCognome(string cognome);
     void setMatricola(string matricola);
     void setImmatricolazione(Data * data);
-    string getNome();
+    string getNome() const;
     string getCognome();
     string getMatricola();
     void printImmatricolazione();
+    bool operator== (Studente s1);
+
 };
 
 #endif /* Studente_hpp */

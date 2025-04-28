@@ -28,7 +28,7 @@ void Studente::setImmatricolazione(Data *data) {
 }
 
 
-string Studente::getNome() {
+string Studente::getNome() const{
     return this->nome;
 }
 
@@ -43,6 +43,11 @@ string Studente::getMatricola() {
 void Studente::printImmatricolazione() {
     this->immatricolazione->out();
 }
+
+bool Studente::operator== (Studente s1) {
+    return ((this->nome == s1.nome) && (this->cognome == s1.cognome) && (this->matricola == s1.matricola));
+}
+
 
 
 

@@ -27,6 +27,7 @@
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			buildPhase = 2D9CA0E82DAFFDC5004170CF /* Sources */;
 			membershipExceptions = (
+				Templates/Classes/Couple.ipp,
 				Templates/templateFunction.ipp,
 			);
 		};

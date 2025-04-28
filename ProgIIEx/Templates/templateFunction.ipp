@@ -42,3 +42,8 @@ template <class T, class U> T prodScalVector(vector<T> &v1, vector<U> &v2) {
 }
 
 
+template <class T> void operator >> (T i, Couple<T> &c){
+    T a, b;
+    c.get(a, b);
+    c.set(a, i);
+}

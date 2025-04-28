@@ -12,6 +12,7 @@
 #include "Contatori/IntCounter.hpp"
 #include "Contatori/StringCounter.hpp"
 #include "Templates/templateFunction.hpp"
+#include "Templates/Classes/Couple.hpp"
 #include "Crittografia/Crittografia.hpp"
 #include "Studenti/Studente.hpp"
 
@@ -19,8 +20,12 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
     
-    Studente *student = new Studente("Vincenzo", "Barbato", "000140500", new Data(2005, 5, 5));
-
+    IntCounter *primo = new IntCounter();
+    IntCounter *secondo = new IntCounter();
+    primo->inc();
+    primo->inc();
+    primo->inc();
+    primo->inc();
     
-    
+    cout << (*secondo != *primo);
 }

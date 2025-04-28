@@ -16,3 +16,18 @@ void IntCounter::inc() {
 int IntCounter::getCounter() {
     return this->counter;
 }
+
+IntCounter& IntCounter::operator= (const IntCounter &c){
+    if (this != &c) {
+        this->counter = c.counter;
+    }
+    return *this;
+}
+
+bool IntCounter::operator==(const IntCounter &c) const{
+    return this->counter == c.counter;
+}
+
+bool IntCounter::operator!=(const IntCounter &c) const{
+    return this->counter != c.counter;
+}
