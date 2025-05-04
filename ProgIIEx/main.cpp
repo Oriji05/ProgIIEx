@@ -14,18 +14,15 @@
 #include "Templates/templateFunction.hpp"
 #include "Templates/Classes/Couple.hpp"
 #include "Crittografia/Crittografia.hpp"
+#include "Figure/Rettangolo.hpp"
 #include "Studenti/Studente.hpp"
-
+#include "Schema15/Schema15.hpp"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-    
-    IntCounter *primo = new IntCounter();
-    IntCounter *secondo = new IntCounter();
-    primo->inc();
-    primo->inc();
-    primo->inc();
-    primo->inc();
-    
-    cout << (*secondo != *primo);
+    Schema15 match(16);
+    match.mischia(10);
+    for (int i = 0; i < match.pad.size(); i++) {
+        cout << match.pad.at(i) << endl;
+    }
 }

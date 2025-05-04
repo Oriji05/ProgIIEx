@@ -32,4 +32,17 @@ double Rettangolo::area(){
 double Rettangolo::perimetro() {
     return 2 * (this->base + this->altezza);
 }
+
+Rettangolo Rettangolo::operator + (const Rettangolo &c) {
+    return Rettangolo(this->base + c.base, this->altezza + c.altezza);
+}
+
+Rettangolo& Rettangolo::operator = (const Rettangolo &c) {
+    if (this != &c){
+        this->base = c.base;
+        this->altezza = c.altezza;
+    }
+    return *this;
+}
+
                                 

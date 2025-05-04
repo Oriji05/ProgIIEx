@@ -28,6 +28,10 @@ public:
     double area();
     double perimetro();
     
+    Rettangolo operator +(const Rettangolo &c);
+    Rettangolo& operator =(const Rettangolo &c);
+
+    
 };
 
 #endif /* Rettangolo_hpp */

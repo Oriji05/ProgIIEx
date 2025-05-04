@@ -8,12 +8,13 @@
 #ifndef Cerchio_hpp
 #define Cerchio_hpp
 
-#define PI 3.1415926535
+
 
 #include <stdio.h>
 
 class Cerchio {
 private:
+    inline static const double pi = 3.1415926535;
     double raggio;
 public:
     Cerchio();

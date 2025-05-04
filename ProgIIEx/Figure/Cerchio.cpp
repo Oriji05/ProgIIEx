@@ -13,9 +13,9 @@ Cerchio::Cerchio() : raggio(1) {}
 Cerchio::Cerchio(double raggio) : raggio(raggio) {}
 
 double Cerchio::area() {
-    return PI * (this->raggio * this->raggio);
+    return this->pi * (this->raggio * this->raggio);
 }
 
 double Cerchio::circon() {
-    return PI * 2 * this->raggio;
+    return this->pi * 2 * this->raggio;
 }
