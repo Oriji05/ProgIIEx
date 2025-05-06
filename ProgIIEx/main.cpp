@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <vector>
+#include <fstream>
 
 #include "Angoli/Angolo.hpp"
 #include "Contatori/IntCounter.hpp"
@@ -17,12 +18,35 @@
 #include "Figure/Rettangolo.hpp"
 #include "Studenti/Studente.hpp"
 #include "Schema15/Schema15.hpp"
+
 using namespace std;
 
+#ifdef _WIN32
+    const string home = getenv("USERPROFILE");
+#else
+    const string home = getenv("HOME");
+#endif
+
+const string projectPath = home + "/C++/ProgIIEx/ProgIIEx/";
+
 int main(int argc, const char * argv[]) {
-    Schema15 match(16);
-    match.mischia(10);
-    for (int i = 0; i < match.pad.size(); i++) {
-        cout << match.pad.at(i) << endl;
+    string p;
+    fstream stream(projectPath + "files/bros.txt" ,std::ios::out | std::ios::in);
+    
+    if (!stream.is_open()) {
+        cout << "errore";
+        return 0;
     }
+    
+    stream << "mi chiamo vincenzo" << endl;
+    stream << "barbato" << endl;
+    stream.seekg(0);
+    
+    while( getline(stream, p) ){
+        cout << p<< endl;
+    }
+    
+    stream.close();
+    
+    
 }
