@@ -30,7 +30,7 @@ using namespace std;
 const string projectPath = home + "/C++/ProgIIEx/ProgIIEx/";
 
 int main(int argc, const char * argv[]) {
-    string p;
+    /*string p;
     fstream stream(projectPath + "files/bros.txt" ,std::ios::out | std::ios::in);
     
     if (!stream.is_open()) {
@@ -47,6 +47,14 @@ int main(int argc, const char * argv[]) {
     }
     
     stream.close();
+    */
+    Schema15 sc(5436789);
     
+    sc.mostra();
+    cout << sc.alto() << endl;
+    sc.mostra();
+    cout << sc.alto() << endl;
+    sc.mostra();
+    cout << sc.alto() << endl;
     
 }

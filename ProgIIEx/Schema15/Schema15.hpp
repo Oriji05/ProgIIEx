@@ -8,17 +8,17 @@
 #ifndef Schema15_hpp
 #define Schema15_hpp
 
-#include <stdio.h>
-#include <vector>
-#include<stdlib.h>
+#include <iostream>
+#include <iomanip>
+
 using namespace std;
 class Schema15 {
     private:
         int numMosse, vX, vY;
         
-        const int maxIter = 1000;
+        inline static const int maxIter = 1000;
     public:
-    vector <int> pad;
+    int pad[16] = {0};
         Schema15();
         Schema15(int);
         bool inizzializza();
