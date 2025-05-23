@@ -21,12 +21,16 @@
 #include "Contatti/Contatto.hpp"
 #include "Templates/library.hpp"
 #include "Rubrica/Rubrica.hpp"
-
+#include "Punto3D/Punto3D.hpp"
+#include "RPG/Mago/RGP_Pmago.hpp"
+#include "Stack/Stack.hpp"
 using namespace std;
 
 
 int main(int argc, const char * argv[]) {
-    
-    Rubrica("files/rubrica");
+    Stack<int> st1(10);
+    st1.push(5);
+    st1.push(10);
+    st1.printStack();
     
 }

@@ -42,6 +42,7 @@ Rubrica& Rubrica::setFile(string file) {
 }
 
 void Rubrica::printRubrica(){
+    this->stream.clear();
     this->stream.seekg(0);
     string p;
     while (getline(this->stream, p)) {
@@ -52,6 +53,7 @@ void Rubrica::printRubrica(){
 void Rubrica::addContat(){
     string nome;
     string numero;
+    this->stream.clear();
     this->stream.seekp(0, ios::end);
     cout << "inserisci il nome: ";
     cin >> nome;
